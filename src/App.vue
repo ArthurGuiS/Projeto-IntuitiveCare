@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="logotipo">
+    <img src="./assets/logo_ic.svg" alt="Logo da Intuitive Care">
+  </div>
+  <Tabela/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Tabela from './components/Tabela.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Tabela
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .logotipo {
+    display: flex;
+    justify-content: center;
+    padding: 9px 0 9px 0;
+  }
 </style>
